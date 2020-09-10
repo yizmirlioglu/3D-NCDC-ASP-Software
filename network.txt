@@ -1,0 +1,12 @@
+4
+0
+basic 1 wb:nwb:nb:neb 2
+disj 2 {nwb,sa:oa} 1
+basic 2 nm 4
+basic 3 em:nem 2
+default 4 swm:sm:sem 2
+infer 1 3
+infer 1 4
+infer 2 4
+
+

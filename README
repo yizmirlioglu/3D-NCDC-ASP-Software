@@ -1,0 +1,66 @@
+
+3D-NCDC-ASP SOFTWARE:
+
+3D-NCDC-ASP is a framework for representing and reasoning about qualitative directional relations. 3D-NCDC-ASP uses Cardinal Directional Calculus (CDC) introduced by Izmirlioglu and Erdem (2020) to represent directional relations. This framework can solve consistency checking problems in 3D-nCDC, integrate commonsense knowledge into reasoning, handle incomplete or uncertain information, infer unknown relations between objects and find a suitable configuration of objects that fulfills the given inquiry.
+
+Features of 3D-NCDC-ASP System:
+- Reason with basic and disjunctive information
+- Utilize commonsense knowledge by default 3D-nCDC constraints
+- Infer missing 3D cardinal directions between objects
+- Alternative domains: Connected (Reg) or possibly disconnected (Reg*)
+
+This software uses ASP programs in the thesis for reasoning with 3D-nCDC. 
+
+
+
+REQUIREMENTS:
+
+Python 3
+
+
+
+USAGE:
+
+Extract 3D-NCDC-ASP-Software.zip to a folder
+Enter your 3D-NCDC constraint network into "network.txt" file according to below format
+Open a Terminal from the folder
+Run the command  "python3 ncdc_3d_python.py"
+
+
+
+FORMAT OF THE "network.lp" FILE:
+
+[Number of Objects]
+[Domain]
+[Constraint Type] [Target Object] [CDC Relation] [Reference Object]
+[Constraint Type] [Target Object] [CDC Relation] [Reference Object]
+[Constraint Type] [Target Object] [CDC Relation] [Reference Object]
+...
+...
+
+
+[Domain]
+0   Disconnected
+1   Connected
+
+[Constraint Type]
+"basic"            Basic constraint
+"disj"             Disjunctive constraint
+"default"          Default constraint
+"infer"            Infer a missing relation (only target and reference object entered, tiles are not entered)
+
+3D-nCDC relation must be written by separating each tile by ":" without any space between them. In case of single-tile relation, ":" is not used.  Tiles are written according to below encoding:
+
+swb: southwest-below  sb:south-below  seb:southeast-below  wb:west-below    ob:on-below   eb:east-below  nwb:northwest-below  nb:north-below  neb:northeast-below
+
+swm: southwest-medium  sb:south-medium  seb:southeast-medium  wb:west-medium   ob:on-medium   eb:east-medium  nwb:northwest-medium  nb:north-medium  neb:northeast-medium
+
+swa: southwest-above  sa:south-above   sea:southeast-above   wa:west-above    oa:on-above    ea:east-above    nwa:northwest-above    na:north-above  nea:northeast-above
+
+In case of Disjunctive 3D-nCDC constraint, disjuncts are written inside curly braces, separated by "," Some space can be left between disjuncts for readability but this is not necessary. See examples
+
+
+
+EXAMPLES:
+
+Look at the content of example1_connected.txt, example2_connected.txt, example3_disconnected.txt, example4_disconnected.txt files for an example network file
