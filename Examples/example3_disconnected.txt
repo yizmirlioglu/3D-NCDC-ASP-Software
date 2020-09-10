@@ -1,0 +1,7 @@
+4
+0
+basic 1 wa:nwa:na:nea 2
+basic 2 sb:ob 1
+basic 2 nm 4
+basic 3 eb:neb 2
+disj 4 {swm:sem, nm:om:em} 2

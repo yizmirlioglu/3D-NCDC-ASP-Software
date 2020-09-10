@@ -1,0 +1,19 @@
+8
+0
+basic 1 wb:nwb:nb:neb 2
+basic 2 sa:oa 1
+basic 2 swm:wm 3
+basic 2 nm 4
+default 2 sa 7
+basic 3 em:nem 2
+basic 3 wm:nwm 5
+default 4 swm:sem 2
+basic 4 sea 6
+disj 5 {sem:em, swa:sea, nm, wb:nwb} 3
+basic 5 sem 6
+basic 6 nwm 4
+disj 7 {nb:neb,eb} 1
+basic 7 nwm:nem 3
+basic 8 sea:na:nea 7
+infer 3 6
+

@@ -1,0 +1,14 @@
+6
+1
+basic 1 wm:nwm:nm:nem:wb:nwb:nb 2
+basic 2 sm:su:om:ou 1
+basic 2 swu:wu 3
+basic 2 nu 4
+basic 3 eb:neb 2
+basic 3 wb:nwb 5
+basic 4 swb:sb:seb 2
+basic 4 seu 6
+basic 5 seu:eu 3
+basic 6 wb:nwb 1
+basic 6 nwb 4
+
