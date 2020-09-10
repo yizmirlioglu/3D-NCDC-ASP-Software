@@ -1,1 +1,0 @@
-# 3D-NCDC-ASP-Software
